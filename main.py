@@ -18,8 +18,11 @@ source_client = mongo.get_client(config['sourceDB']['connectionString'])
 destination_client = mongo.get_client(config['destinationDB']['connectionString'])
 
 databases = config['databases']
+##ADICIONAR O PREDICADO AQUI!!
+## "ClientId": Binary.from_uuid(uuid.UUID("60da017d-a0e5-b5d9-191c-3a0142867d1b"))
+## EXEMPLO DE PREDICADO USANDO BINÁRIO
+
 predicate = {}
-  # Predicado fixo]
 
 for database in databases:
     source_db = source_client[database['name']]
