@@ -1,0 +1,21 @@
+{
+  "sourceDB":
+  {
+    "connectionString": "mongodb://localhost:27020"
+  },
+  "destinationDB":
+  {
+    "connectionString": "mongodb://localhost:27020"
+  },
+  "databases":
+  [
+    {
+      "name": "db_0",
+      "collections": ["A", "B", "C", "D"]
+    },
+    {
+      "name": "db_1",
+      "collections": ["E"]
+    }
+  ]
+}
